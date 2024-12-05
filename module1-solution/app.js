@@ -7,13 +7,6 @@
     $scope.message = '';
     $scope.lunchItems = '';
     $scope.checkLunch = function () {
-      // var menu = $scope.lunchItems.split(','); // split the menu into an array
-      // if (menu.length > 3) {
-      //   $scope.message = 'Too much!';
-      // } else {
-      //   $scope.message = 'Enjoy!';
-      // }
-
       $scope.message = "";
       $scope.messageClass = "";
       $scope.inputClass = "";
@@ -26,7 +19,7 @@
           $scope.inputClass = "red-border";
         } else {
           // Split the string by commas and filter out empty items
-          var items = $scope.lunchItems.split(',').map(item => item.trim()).filter(item => item !== "");
+          const items = $scope.lunchItems.split(',').map(item => item.trim()).filter(item => item !== "");
 
           if (items.length === 0) {
             $scope.message = "Please enter data first";
