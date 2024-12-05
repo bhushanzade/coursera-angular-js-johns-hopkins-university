@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" ng-app="NameCalculator">
+<html lang="en">
 
 <head>
   <meta charset="UTF-8">
@@ -9,14 +9,25 @@
   <script src="./app.js"></script>
 </head>
 
-<body>
-  <div ng-controller="NameCalculatorCtrl">
+<body ng-app="MsgApp">
+  <div ng-controller="MsgCtrl">
     <div>
       Your Name :
       <input type="text" ng-model="name" ng-keyup="displayNumericValue()">
     </div>
     <div>
       Total numeric value of persons name: {{totalVal}}
+    </div>
+
+    <div>
+      Assuming value is a .23, {{ value | currency : '%' : 3 }}
+    </div>
+
+    <div>
+      Message, {{ message | replaceword : 'Coursera' : "Bhushan" }}
+    </div>
+    <div>
+      Message, {{ message2 }}
     </div>
   </div>
 </body>
