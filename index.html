@@ -11,24 +11,14 @@
 
 <body ng-app="MsgApp">
   <div ng-controller="MsgCtrl">
-    <div>
-      Your Name :
-      <input type="text" ng-model="name" ng-keyup="displayNumericValue()">
-    </div>
-    <div>
-      Total numeric value of persons name: {{totalVal}}
-    </div>
-
-    <div>
-      Assuming value is a .23, {{ value | currency : '%' : 3 }}
-    </div>
-
-    <div>
-      Message, {{ message | replaceword : 'Coursera' : "Bhushan" }}
-    </div>
-    <div>
-      Message, {{ message2 }}
-    </div>
+    <h1>Welcome to course Angular Js by Johns Hopkins University</h1>
+    <ul>
+      <li>Module 1 Solution -> <button><a href="./module1-solution">Click Here</a></button></li>
+      <li>Module 2 Solution -> <button><a href="./module2-solution">Click Here</a></button></li>
+      <li>Module 3 Solution -> <button><a href="./module3-solution">Click Here</a></button></li>
+      <li>Module 4 Solution -> <button><a href="./module4-solution">Click Here</a></button></li>
+      <li>Module 5 Solution -> <button><a href="./module5-solution">Click Here</a></button></li>
+    </ul>
   </div>
 </body>
 
